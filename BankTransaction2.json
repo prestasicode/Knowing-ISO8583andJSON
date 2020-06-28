@@ -1,0 +1,57 @@
+{
+    "transaction_type": "Withdraw Fund",
+    "transaction_details":{
+        "transaction_calc": "1",
+        "gross_amount": "100000",
+        "transaction_id": "098f7dd4-0022-4a40-8850-61f465d0ee94"
+    },
+    "customer_details":{
+        "bank": "bni",
+        "va_number": "0445102875",
+        "pass_acc":"absdxhcnxhsdfms"
+    },
+    "payment_details":{
+        "payment_calc": "1",
+        "payment_id": "pay-a1zx",
+        "payment_type": "Top Up Voucher Telephone/Handphone",
+        "payment_amount": []
+    },
+    "biller_details": [
+        {
+            "biller_id": "1",
+            "biller_type": "Tsel",
+            "biller_amount": "100000"
+        },
+        {
+            "biller_id": "2",
+            "biller_type": "Tsel",
+            "biller_amount": "50000"
+        }
+    ]
+}
+
+
+
+From the request,I get a response
+
+{
+    "va_numbers": [
+    {
+        "bank": "bni",
+        "va_number": "0445102875"
+    }
+], 
+    "status_code": "201",
+    "status_message": "Success, Payment transaction is created",
+    "transaction_id": "098f7dd4-0022-4a40-8850-61f465d0ee94",
+    "payment_id": "pay-10012",
+    "transaction_calc": "1", 
+    "biller_calc": "2",  
+    "total_amount": "150000.00",
+    "currency": "IDR",
+    "card_type": "debit",
+    "transaction_type": "Payment Top Up Prepaid Voucher Tsel",
+    "transaction_time": "2020-06-23 07:31:40",
+    "transaction_status": "success",
+    "fraud_status": "accept"
+}
